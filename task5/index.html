@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5 - Fetch API</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .error { color: red; margin-top: 10px; }
+        .completed { text-decoration: line-through; color: gray; }
+        ul { line-height: 1.5; }
+    </style>
+</head>
+<body>
+    <h1>Задание 5: Список задач пользователя</h1>
+    <input type="number" id="userId" placeholder="Введите ID (например, 3)">
+    <button id="fetchBtn">Получить список задач</button>
+    <div id="errorMsg" class="error"></div>
+    <ul id="todoList"></ul>
+    <script src="script.js"></script>
+</body>
+</html>

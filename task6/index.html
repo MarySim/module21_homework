@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 6 - Итоговое приложение</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .input-group { margin-bottom: 10px; }
+        input { margin-right: 10px; padding: 5px; }
+        button { padding: 5px 15px; cursor: pointer; }
+        .message { margin-top: 15px; color: red; font-weight: bold; }
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .images-container img {
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Галерея Picsum</h1>
+    
+    <div class="input-group">
+        <label for="pageInput">Номер страницы:</label>
+        <input type="text" id="pageInput" placeholder="от 1 до 10">
+    </div>
+    <div class="input-group">
+        <label for="limitInput">Лимит:</label>
+        <input type="text" id="limitInput" placeholder="от 1 до 10">
+    </div>
+    <button id="requestBtn">запрос</button>
+    <div id="message" class="message"></div>
+    <div id="imagesContainer" class="images-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
